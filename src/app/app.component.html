@@ -1,0 +1,59 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<!-- <div style="text-align:center">
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
+</div>
+<h2>Here are some links to help you start: </h2>
+<ul>
+  <li>
+    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
+  </li>
+  <li>
+    <h2><a target="_blank" rel="noopener" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
+  </li>
+  <li>
+    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
+  </li>
+</ul> -->
+
+
+<div>
+  Name: <input type="text" #inputName>
+  <button (click)="createAccount(inputName.value)">Create Account</button><br/>
+  {{createAccountText}}
+  <br/><br/><br/>
+</div>
+<div>
+  Account No: <input type="text" #depAcctNo><br/>
+  Amount to Deposit: <input type="text" #depAmt><br/>
+  <button (click)="deposit(depAcctNo.value, depAmt.value)">Deposit</button><br/>
+  {{depositText}}
+  <br/><br/><br/>
+</div>
+<div>
+  Account No: <input type="text" #withAcctNo><br/>
+  Amount withdraw: <input type="text" #withAmt> 
+  <button (click)="withdraw(withAcctNo.value, withAmt.value)">Withdraw</button><br/>
+  {{withdrawText}}
+  <br/><br/><br/>
+</div>
+<div>
+  Account No: <input type="text" #balanceAcctNo><br/>
+  <button (click)="balance(balanceAcctNo.value)">Check Balance</button><br/>
+  {{balanceText}}
+  <br/><br/><br/>
+</div>
+<div>
+  Account No: <input type="text" #detailsAcctNo><br/>
+  <button (click)="details(detailsAcctNo.value)">Account Details</button><br/>
+  {{detailsText}}
+  <br/><br/><br/>
+</div>
+<div>
+    Increased Year: <input type="text" #incYear><br/>
+    Interest Rate (%): <input type="text" #intRate><br/>
+    <button (click)="calInterest(incYear.value, intRate.value)">Calculate interest</button><br/>
+    {{interestText}}
+  </div>
